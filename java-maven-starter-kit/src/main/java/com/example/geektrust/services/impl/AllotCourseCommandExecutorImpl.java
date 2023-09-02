@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Map;
 import java.util.TreeMap;
 
+import com.example.geektrust.constants.Constants;
 import com.example.geektrust.exceptions.InvalidInputException;
 import com.example.geektrust.models.Command;
 import com.example.geektrust.models.Course;
@@ -14,7 +15,7 @@ import com.example.geektrust.services.CommandExecutor;
 public class AllotCourseCommandExecutorImpl implements CommandExecutor{
      @Override
     public void executeCommand(TreeMap<String, Course> courses, Map<String, Course> registrationIdCourseMap, Command command) throws InvalidInputException {
-        String courseId = command.getCommandParams().get(0);
+        String courseId = command.getCommandParams().get(Constants.ZERO);
         Course course = courses.get(courseId);
         if(course!=null){
             if(course.getRegisteredEmployees().size()<course.getMinCapacity()){

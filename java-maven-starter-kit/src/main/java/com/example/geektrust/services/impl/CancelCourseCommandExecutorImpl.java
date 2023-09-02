@@ -11,7 +11,7 @@ import com.example.geektrust.services.CommandExecutor;
 public class CancelCourseCommandExecutorImpl implements CommandExecutor{
     @Override
     public void executeCommand(TreeMap<String, Course> courses, Map<String, Course> registrationIdCourseMap, Command command) {
-        String regId = command.getCommandParams().get(0);
+        String regId = command.getCommandParams().get(Constants.ZERO);
         if(isValidRegistrationID(regId,registrationIdCourseMap)){
             if(isCourseNotAllotted(regId,registrationIdCourseMap)){
                 System.out.println(regId+" "+Constants.CANCEL_REJECTED);

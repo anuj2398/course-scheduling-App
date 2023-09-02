@@ -22,9 +22,9 @@ public class CommandService {
     public Command getCommandFromString(String input) throws InvalidInputException {
         try {
             String[] commandWithArguments = input.split(" ");
-            CommandOperator operator = CommandOperator.valueOf(Constants.getValue(commandWithArguments[0]));
+            CommandOperator operator = CommandOperator.valueOf(Constants.getValue(commandWithArguments[Constants.ZERO]));
             List<String> commandParams =
-                    Arrays.stream(commandWithArguments).skip(1).collect(Collectors.toList());
+                    Arrays.stream(commandWithArguments).skip(Constants.ONE).collect(Collectors.toList());
             Command command = new Command(operator, commandParams);
             this.validateInputCommand(operator,command);
             return command;

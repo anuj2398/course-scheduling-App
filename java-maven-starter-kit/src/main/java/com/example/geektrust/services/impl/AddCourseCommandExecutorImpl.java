@@ -3,6 +3,7 @@ package com.example.geektrust.services.impl;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import com.example.geektrust.constants.Constants;
 import com.example.geektrust.exceptions.InvalidInputException;
 import com.example.geektrust.models.Command;
 import com.example.geektrust.models.Course;
@@ -20,12 +21,12 @@ public class AddCourseCommandExecutorImpl implements CommandExecutor {
     private Course constructCourseObject(List<String> params) throws InvalidInputException {
         Course course = null;
         try{
-            String courseName = params.get(0);
-            String courseInstructor = params.get(1);
+            String courseName = params.get(Constants.ZERO);
+            String courseInstructor = params.get(Constants.ONE);
             SimpleDateFormat inputFormat = new SimpleDateFormat("ddMMyyyy");
-            Date d = inputFormat.parse(params.get(2));
-            int minCount = Integer.parseInt(params.get(3));
-            int maxCount = Integer.parseInt(params.get(4));
+            Date d = inputFormat.parse(params.get(Constants.TWO));
+            int minCount = Integer.parseInt(params.get(Constants.THREE));
+            int maxCount = Integer.parseInt(params.get(Constants.FOUR));
             course = new Course("OFFERING-"+courseName+"-"+courseInstructor,courseName , courseInstructor , d ,minCount , maxCount , false, false);
         }catch (Exception e){
             throw new InvalidInputException("INPUT_ERROR");

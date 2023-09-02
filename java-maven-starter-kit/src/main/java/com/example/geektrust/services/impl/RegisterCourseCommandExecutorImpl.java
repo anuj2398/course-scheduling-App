@@ -14,7 +14,7 @@ import com.example.geektrust.services.CommandExecutor;
 public class RegisterCourseCommandExecutorImpl implements CommandExecutor{
      @Override
     public void executeCommand(TreeMap<String, Course> courses, Map<String, Course> registrationIdCourseMap, Command command) throws InvalidInputException, CourseFullException {
-        String courseID = command.getCommandParams().get(1);
+        String courseID = command.getCommandParams().get(Constants.ONE);
         Employee employee = ConstructEmployeeObject(command);
         if(courses.containsKey(courseID)){
             Course course = courses.get(courseID);

@@ -9,6 +9,12 @@ public class Constants {
     public static final String ACCEPTED = "ACCEPTED";
     public static final String CANCEL_REJECTED = "CANCEL_REJECTED";
     public static final String CANCEL_ACCEPTED = "CANCEL_ACCEPTED";
+    public static final Integer ZERO=0;
+    public static final Integer ONE=1;
+    public static final Integer TWO=2;
+    public static final Integer THREE=3;
+    public static final Integer FOUR=4;
+    public static final Integer FIVE=5;
 
     public static String getValue(String input) {
         String value = "";
