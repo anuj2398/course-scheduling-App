@@ -1,7 +1,5 @@
 package com.example.geektrust.serviceTest;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.ByteArrayOutputStream;
@@ -12,7 +10,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.example.geektrust.concetes.CommandExecutionFactory;
-import com.example.geektrust.exceptions.CourseFullException;
 import com.example.geektrust.exceptions.InvalidInputException;
 import com.example.geektrust.models.Command;
 import com.example.geektrust.models.Course;

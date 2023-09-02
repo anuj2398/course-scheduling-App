@@ -3,14 +3,10 @@ package com.example.geektrust.serviceTest;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
 import com.example.geektrust.services.FileProcesserService;
 
 public class FileProcessorServiceTest {
