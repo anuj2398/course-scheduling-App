@@ -1,4 +1,4 @@
-package com.example.geektrust.commandTest;
+package com.example.geektrust.enumTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
