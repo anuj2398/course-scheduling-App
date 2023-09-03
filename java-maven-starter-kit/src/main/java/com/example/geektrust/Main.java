@@ -32,7 +32,7 @@ public class Main {
         }
     }
 
-    private void printUsage() {
+    void printUsage() {
         System.err.println("Usage: java CourseSchedulingApp <input-file>");
     }
 
