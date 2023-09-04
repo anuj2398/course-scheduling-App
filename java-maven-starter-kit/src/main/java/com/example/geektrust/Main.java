@@ -18,7 +18,7 @@ public class Main {
         app.run(args);
     }
 
-    private void run(String[] args) {
+    public void run(String[] args) {
         if (args.length != 1) {
             printUsage();
             return;
