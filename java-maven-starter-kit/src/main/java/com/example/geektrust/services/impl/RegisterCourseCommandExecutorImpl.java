@@ -26,12 +26,13 @@ public class RegisterCourseCommandExecutorImpl implements CommandExecutor{
         Course course = courses.get(courseID);
     
         if (course.isAllotted() || course.isCancelled()) {
-            // In case of course is allotted already
+            // In case the course is allotted or cancelled already.
             System.out.println("REG-COURSE-" + employee.getName() + "-" + course.getCourseName() + " " + Constants.REJECTED);
         } else if (course.getRegisteredEmployees().size() == course.getMaxCapacity()) {
+            // The course is full.
             throw new CourseFullException("COURSE_FULL_ERROR");
         } else {
-            // Register the employee to the course
+            // Register the employee to the course.
             registerEmployeeToCourse(employee, course, registrationIdCourseMap);
         }
     }
