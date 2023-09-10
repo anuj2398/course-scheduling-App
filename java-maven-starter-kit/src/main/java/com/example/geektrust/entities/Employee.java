@@ -1,4 +1,4 @@
-package com.example.geektrust.models;
+package com.example.geektrust.entities;
 
 import com.example.geektrust.constants.Constants;
 import com.example.geektrust.exceptions.InvalidInputException;

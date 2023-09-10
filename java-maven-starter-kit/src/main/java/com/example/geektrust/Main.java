@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.example.geektrust.concetes.LearningManagementSystem;
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
 import com.example.geektrust.services.FileProcesserService;
 
 import java.io.FileNotFoundException;

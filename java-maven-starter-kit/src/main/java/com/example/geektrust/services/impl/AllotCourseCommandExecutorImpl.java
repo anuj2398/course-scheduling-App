@@ -6,10 +6,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import com.example.geektrust.constants.Constants;
+import com.example.geektrust.entities.Command;
+import com.example.geektrust.entities.Course;
+import com.example.geektrust.entities.Employee;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
-import com.example.geektrust.models.Course;
-import com.example.geektrust.models.Employee;
 import com.example.geektrust.services.CommandExecutor;
 
 public class AllotCourseCommandExecutorImpl implements CommandExecutor{

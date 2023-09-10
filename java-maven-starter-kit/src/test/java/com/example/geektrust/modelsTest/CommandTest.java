@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.enums.CommandOperator;
-import com.example.geektrust.models.Command;
 
 public class CommandTest {
      @Test

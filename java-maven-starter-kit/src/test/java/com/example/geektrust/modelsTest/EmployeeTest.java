@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
+import com.example.geektrust.entities.Employee;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Employee;
 
 public class EmployeeTest {
     @Test

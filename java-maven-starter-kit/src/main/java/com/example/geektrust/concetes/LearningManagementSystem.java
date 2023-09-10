@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+import com.example.geektrust.entities.Command;
+import com.example.geektrust.entities.Course;
 import com.example.geektrust.exceptions.CourseFullException;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
-import com.example.geektrust.models.Course;
 import com.example.geektrust.services.CommandExecutor;
 
 public class LearningManagementSystem {

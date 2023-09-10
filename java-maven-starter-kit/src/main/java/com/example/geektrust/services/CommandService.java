@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.example.geektrust.constants.Constants;
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.enums.CommandOperator;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
 
 public class CommandService {
     static CommandService commandService = null;

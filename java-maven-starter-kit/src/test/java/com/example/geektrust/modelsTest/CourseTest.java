@@ -8,9 +8,9 @@ import java.util.Date;
 
 import org.junit.jupiter.api.Test;
 
+import com.example.geektrust.entities.Course;
+import com.example.geektrust.entities.Employee;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Course;
-import com.example.geektrust.models.Employee;
 
 public class CourseTest {
     //@Test

@@ -1,7 +1,7 @@
 package com.example.geektrust.concetes;
 
 import com.example.geektrust.constants.Constants;
-import com.example.geektrust.models.Command;
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.services.CommandExecutor;
 import com.example.geektrust.services.impl.AddCourseCommandExecutorImpl;
 import com.example.geektrust.services.impl.AllotCourseCommandExecutorImpl;

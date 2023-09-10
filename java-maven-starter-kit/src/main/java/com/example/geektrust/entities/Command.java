@@ -1,4 +1,4 @@
-package com.example.geektrust.models;
+package com.example.geektrust.entities;
 
 import java.util.List;
 

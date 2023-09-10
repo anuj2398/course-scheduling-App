@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 import com.example.geektrust.concetes.CommandExecutionFactory;
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.enums.CommandOperator;
-import com.example.geektrust.models.Command;
 import com.example.geektrust.services.CommandExecutor;
 import com.example.geektrust.services.impl.AddCourseCommandExecutorImpl;
 import com.example.geektrust.services.impl.AllotCourseCommandExecutorImpl;

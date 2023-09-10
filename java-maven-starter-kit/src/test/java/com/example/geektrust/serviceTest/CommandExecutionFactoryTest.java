@@ -5,8 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.example.geektrust.concetes.CommandExecutionFactory;
+import com.example.geektrust.entities.Command;
 import com.example.geektrust.exceptions.InvalidInputException;
-import com.example.geektrust.models.Command;
 import com.example.geektrust.services.CommandService;
 import com.example.geektrust.services.impl.AddCourseCommandExecutorImpl;
 
